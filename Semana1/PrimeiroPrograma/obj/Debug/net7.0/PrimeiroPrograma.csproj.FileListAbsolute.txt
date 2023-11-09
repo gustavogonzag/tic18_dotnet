@@ -1,0 +1,15 @@
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/bin/Debug/net7.0/PrimeiroPrograma
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/bin/Debug/net7.0/PrimeiroPrograma.deps.json
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/bin/Debug/net7.0/PrimeiroPrograma.runtimeconfig.json
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/bin/Debug/net7.0/PrimeiroPrograma.dll
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/bin/Debug/net7.0/PrimeiroPrograma.pdb
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/obj/Debug/net7.0/PrimeiroPrograma.csproj.AssemblyReference.cache
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/obj/Debug/net7.0/PrimeiroPrograma.GeneratedMSBuildEditorConfig.editorconfig
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/obj/Debug/net7.0/PrimeiroPrograma.AssemblyInfoInputs.cache
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/obj/Debug/net7.0/PrimeiroPrograma.AssemblyInfo.cs
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/obj/Debug/net7.0/PrimeiroPrograma.csproj.CoreCompileInputs.cache
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/obj/Debug/net7.0/PrimeiroPrograma.dll
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/obj/Debug/net7.0/refint/PrimeiroPrograma.dll
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/obj/Debug/net7.0/PrimeiroPrograma.pdb
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/obj/Debug/net7.0/PrimeiroPrograma.genruntimeconfig.cache
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/obj/Debug/net7.0/ref/PrimeiroPrograma.dll
