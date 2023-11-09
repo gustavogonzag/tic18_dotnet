@@ -1,1 +1,1 @@
-#Criando pasta para todas as atividades
+#Criando pasta para todas as atividades.
