@@ -10,4 +10,10 @@ long tipoLong;
 
 tipoInteiro = int.MaxValue;
 
+Console.WriteLine(tipoInteiro);
+
+#endregion
+
+#region Operadores
+    
 #endregion
