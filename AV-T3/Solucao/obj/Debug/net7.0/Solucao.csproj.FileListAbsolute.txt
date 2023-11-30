@@ -1,0 +1,15 @@
+/home/gustavo-souza-gonzaga/tic18_dotnet/AV-T3/Solucao/bin/Debug/net7.0/Solucao
+/home/gustavo-souza-gonzaga/tic18_dotnet/AV-T3/Solucao/bin/Debug/net7.0/Solucao.deps.json
+/home/gustavo-souza-gonzaga/tic18_dotnet/AV-T3/Solucao/bin/Debug/net7.0/Solucao.runtimeconfig.json
+/home/gustavo-souza-gonzaga/tic18_dotnet/AV-T3/Solucao/bin/Debug/net7.0/Solucao.dll
+/home/gustavo-souza-gonzaga/tic18_dotnet/AV-T3/Solucao/bin/Debug/net7.0/Solucao.pdb
+/home/gustavo-souza-gonzaga/tic18_dotnet/AV-T3/Solucao/obj/Debug/net7.0/Solucao.csproj.AssemblyReference.cache
+/home/gustavo-souza-gonzaga/tic18_dotnet/AV-T3/Solucao/obj/Debug/net7.0/Solucao.GeneratedMSBuildEditorConfig.editorconfig
+/home/gustavo-souza-gonzaga/tic18_dotnet/AV-T3/Solucao/obj/Debug/net7.0/Solucao.AssemblyInfoInputs.cache
+/home/gustavo-souza-gonzaga/tic18_dotnet/AV-T3/Solucao/obj/Debug/net7.0/Solucao.AssemblyInfo.cs
+/home/gustavo-souza-gonzaga/tic18_dotnet/AV-T3/Solucao/obj/Debug/net7.0/Solucao.csproj.CoreCompileInputs.cache
+/home/gustavo-souza-gonzaga/tic18_dotnet/AV-T3/Solucao/obj/Debug/net7.0/Solucao.dll
+/home/gustavo-souza-gonzaga/tic18_dotnet/AV-T3/Solucao/obj/Debug/net7.0/refint/Solucao.dll
+/home/gustavo-souza-gonzaga/tic18_dotnet/AV-T3/Solucao/obj/Debug/net7.0/Solucao.pdb
+/home/gustavo-souza-gonzaga/tic18_dotnet/AV-T3/Solucao/obj/Debug/net7.0/Solucao.genruntimeconfig.cache
+/home/gustavo-souza-gonzaga/tic18_dotnet/AV-T3/Solucao/obj/Debug/net7.0/ref/Solucao.dll
