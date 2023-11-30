@@ -15,7 +15,7 @@ class Pessoa
         this.Nome = _nome;
         this.Idade = _idade;
         this.DataNascimento = DateTime.ParseExact(_dataNascimento, "dd/MM/yyyy", CultureInfo.InvariantCulture);
-        this.CPF = _CPF;
+        if(_CPF.Length == 11){this.CPF = _CPF;} else {throw new ArgumentException("CPF inválido");}
     }
 
     public void imprime()
@@ -80,6 +80,7 @@ class Advogado : Pessoa
     public Advogado(string _nome, int _idade, string _dataNascimento, string _CPF, string _CNA) : base(_nome, _idade, _dataNascimento, _CPF)
     {
         this.CNA = _CNA;
+        if(_CPF.Length == 11) this.CPF = _CPF;
     }
 
     public string getCNA()
@@ -110,6 +111,7 @@ class Cliente : Pessoa
     {
         this._estadoCivil = _estadoCivil;
         this._profissao = _profissao;
+        if(_CPF.Length == 11){this.CPF = _CPF;} else {throw new ArgumentException("CPF inválido");}
     }
 
     public string getEstadoCivil()
@@ -305,7 +307,7 @@ class Program
         ListaClientes listaClientes = new ListaClientes();
         ListaAdvCli listaAdvCli = new ListaAdvCli();
 
-        Advogado Venancio = new Advogado("Venancio", 25, "01/01/2000", "12345678910", "123456");
+        Advogado Venancio = new Advogado("Venancio", 25, "01/01/2000", "123456", "123456");
         listaAdvogados.AdicionarAdvogado(Venancio);
         listaAdvCli.AdicionarPessoa(Venancio);
 
