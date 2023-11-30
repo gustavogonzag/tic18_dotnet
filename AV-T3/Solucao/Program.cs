@@ -174,6 +174,10 @@ class ListaAdvogados
                 advogadosFilterIdade.Add(advogado);
             }
         }
+        foreach (var item in advogadosFilterIdade)
+        {
+            Console.WriteLine($"Nome {item.Nome} - Idade {item.Idade}");
+        }
         return advogadosFilterIdade;
     }
 }
@@ -190,7 +194,7 @@ class ListaClientes
         this.listaClientes.Add(cliente);
     }
 
-    public List<Cliente> ClientesPorIdades(int _idade1, int _idade2)
+    public void ClientesPorIdades(int _idade1, int _idade2)
     {
         List<Cliente> clientesFilterIdade = new List<Cliente>();
         foreach (Cliente cliente in this.listaClientes)
@@ -200,10 +204,13 @@ class ListaClientes
                 clientesFilterIdade.Add(cliente);
             }
         }
-        return clientesFilterIdade;
+        foreach (var item in clientesFilterIdade)
+        {
+            Console.WriteLine($"Nome {item.Nome} - Idade {item.Idade}");
+        }
     }
 
-    public List<Cliente> ClientesPorEstadoCivil(string _estadoCivil)
+    public void ClientesPorEstadoCivil(string _estadoCivil)
     {
         List<Cliente> clientesFilterEstadoCivil = new List<Cliente>();
         foreach (Cliente cliente in this.listaClientes)
@@ -213,10 +220,13 @@ class ListaClientes
                 clientesFilterEstadoCivil.Add(cliente);
             }
         }
-        return clientesFilterEstadoCivil;
+        foreach (var item in clientesFilterEstadoCivil)
+        {
+            Console.WriteLine($"Nome {item.Nome} - Estado civil {item._estadoCivil}");
+        }
     }
 
-    public List<Cliente> ClientesPorProfissao(string _profissao)
+    public void ClientesPorProfissao(string _profissao)
     {
         List<Cliente> clientesFilterProfissao = new List<Cliente>();
         foreach (Cliente cliente in this.listaClientes)
@@ -226,17 +236,23 @@ class ListaClientes
                 clientesFilterProfissao.Add(cliente);
             }
         }
-        return clientesFilterProfissao;
+        foreach (var item in clientesFilterProfissao)
+        {
+            Console.WriteLine($"Nome {item.Nome} - Profissão {item._profissao}");
+        }
     }
 
-    public List<Cliente> ClienteAlfaOrdenados()
+    public void ClienteAlfaOrdenados()
     {
         List<Cliente> clientesAlfa = new List<Cliente>();
         foreach (Cliente cliente in this.listaClientes)
         {
             clientesAlfa.Add(cliente);
         }
-        return clientesAlfa.OrderBy(c => c.Nome).ToList();
+        foreach (var item in clientesAlfa.OrderBy(c => c.Nome).ToList())
+        {
+            Console.WriteLine($"Nome {item.Nome} ");
+        }
     }
 
     public List<Cliente> ObterClientes()
@@ -262,7 +278,7 @@ class ListaAdvCli{
             }
         }
 
-        public List<Pessoa> PessoasFilterMesAniversarios(int _mes)
+        public void PessoasFilterMesAniversarios(int _mes)
         {
             List<Pessoa> pessoasFilterMes = new List<Pessoa>();
             foreach (Pessoa pessoa in this.Pessoas)
@@ -272,7 +288,10 @@ class ListaAdvCli{
                     pessoasFilterMes.Add(pessoa);
                 }
             }
-            return pessoasFilterMes;
+        foreach (var item in pessoasFilterMes)
+            {
+                Console.WriteLine($"Nome {item.Nome} - Mês aniversário {item.DataNascimento.Month}");
+            };
         }
 }
 
@@ -286,21 +305,40 @@ class Program
         ListaClientes listaClientes = new ListaClientes();
         ListaAdvCli listaAdvCli = new ListaAdvCli();
 
-        listaAdvogados.AdicionarAdvogado(new Advogado("Joaquim", 25, "11/11/2000", "12345678901", "123456789"));
-        listaAdvogados.AdicionarAdvogado(new Advogado("PEdro", 22, "25/02/1998", "234324132", "34534567678"));
+        Advogado Venancio = new Advogado("Venancio", 25, "01/01/2000", "12345678910", "123456");
+        listaAdvogados.AdicionarAdvogado(Venancio);
+        listaAdvCli.AdicionarPessoa(Venancio);
 
-        listaClientes.AdicionarCliente(new Cliente("Marcelo", 28, "11/03/1997", "12345678901", "Solteiro", "Noia"));
-        listaClientes.AdicionarCliente(new Cliente("Dab", 30, "20/06/1988", "2137648438", "Solteiro", "Meotêro"));
+        Advogado Kadmo = new Advogado("Kadmo", 30, "01/01/2000", "09876543210", "654321");
+        listaAdvogados.AdicionarAdvogado(Kadmo);
+        listaAdvCli.AdicionarPessoa(Kadmo);
 
-        listaAdvCli.AdicionarAdvogados(listaAdvogados.ObterAdvogados());
-        listaAdvCli.AdicionarClientes(listaClientes.ObterClientes());
+        Cliente Silas = new Cliente("Silas", 28, "01/01/2000", "0987654321","Solteiro", "Noia");
+        listaClientes.AdicionarCliente(Silas);
+        listaAdvCli.AdicionarPessoa(Silas);
 
+        Cliente Levy = new Cliente("Levy", 30, "01/01/2000", "12345678910","Solteiro", "Mêoteiro");
+        listaClientes.AdicionarCliente(Levy);
+        listaAdvCli.AdicionarPessoa(Levy);
+
+        Console.WriteLine("---CLIENTES ORDENADOS ALFABETICAMENTE---");
         listaClientes.ClienteAlfaOrdenados();
+        Console.WriteLine("\n");
+        Console.WriteLine("---CLIENTES ENTRE 20 E 30 ANOS---");
         listaClientes.ClientesPorIdades(20, 30);
+        Console.WriteLine("\n");
+        Console.WriteLine("---CLIENTES PROFISSAO = 'Noia' ---");
         listaClientes.ClientesPorProfissao("Noia");
+        Console.WriteLine("\n");
+        Console.WriteLine("---CLIENTES ESTADO CIVIL = 'Solteiro'---");
         listaClientes.ClientesPorEstadoCivil("Solteiro");
-
+        Console.WriteLine("\n");
+        Console.WriteLine("---ADVOGADOS COM IDADE ENTRE 20 E 30 ANOS---");
         listaAdvogados.AdvogadosPorIdades(20, 30);
+        Console.WriteLine("\n");
+        Console.WriteLine("---ADVOGADOS E CLIENTES ANIVERSARIANTE DO MÊS 03---");
+        listaAdvCli.PessoasFilterMesAniversarios(1);
+        Console.WriteLine("\n");
     }        
 }
 #endregion
