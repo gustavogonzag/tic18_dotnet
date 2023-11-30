@@ -10,9 +10,8 @@ class Pessoa
     public string CPF { get; protected set; }
     public int Idade { get; protected set; }
 
-    public Pessoa(string _nome, int _idade, DateTime _dataNascimento, string _CPF)
+    public Pessoa(string _nome, int _idade, string _dataNascimento, string _CPF)
     {   
-        String dataString = _dataNascimento.ToString("dd/MM/yyyy");
         this.Nome = _nome;
         this.Idade = _idade;
         this.DataNascimento = DateTime.ParseExact(_dataNascimento, "dd/MM/yyyy", CultureInfo.InvariantCulture);
@@ -78,7 +77,7 @@ class Advogado : Pessoa
 {
     public string CNA;
 
-    public Advogado(string _nome, int _idade, DateTime _dataNascimento, string _CPF, string _CNA) : base(_nome, _idade, _dataNascimento, _CPF)
+    public Advogado(string _nome, int _idade, string _dataNascimento, string _CPF, string _CNA) : base(_nome, _idade, _dataNascimento, _CPF)
     {
         this.CNA = _CNA;
     }
@@ -107,7 +106,7 @@ class Cliente : Pessoa
     public string _estadoCivil { get; protected set; }
     public string _profissao { get; protected set; }
 
-    public Cliente(string _nome, int _idade, DateTime _dataNascimento, string _CPF, string _estadoCivil, string _profissao) : base(_nome, _idade, _dataNascimento, _CPF)
+    public Cliente(string _nome, int _idade, string _dataNascimento, string _CPF, string _estadoCivil, string _profissao) : base(_nome, _idade, _dataNascimento, _CPF)
     {
         this._estadoCivil = _estadoCivil;
         this._profissao = _profissao;
@@ -246,7 +245,10 @@ class Program
         ListaClientes listaClientes = new ListaClientes();
 
         listaAdvogados.AdicionarAdvogado(new Advogado("Joaquim", 25, "11/11/2000", "12345678901", "123456789"));
-        listaClientes.AdicionarCliente(new Cliente("Joaquim", 25, DateTime.Now, "12345678901", "Solteiro", "Advogado"));
-    }
+        listaClientes.AdicionarCliente(new Cliente("Joaquim", 25, "11/03/1997", "12345678901", "Solteiro", "Advogado"));
+    
+        
+
+    }        
 }
 #endregion
