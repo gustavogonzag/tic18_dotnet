@@ -1,6 +1,7 @@
 ﻿#region Avaliamento-t3
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.VisualBasic;
+using System.Globalization;
 
 class Pessoa
 {
@@ -10,10 +11,11 @@ class Pessoa
     public int Idade { get; protected set; }
 
     public Pessoa(string _nome, int _idade, DateTime _dataNascimento, string _CPF)
-    {
+    {   
+        String dataString = _dataNascimento.ToString("dd/MM/yyyy");
         this.Nome = _nome;
         this.Idade = _idade;
-        this.DataNascimento = _dataNascimento;
+        this.DataNascimento = DateTime.ParseExact(_dataNascimento, "dd/MM/yyyy", CultureInfo.InvariantCulture);
         this.CPF = _CPF;
     }
 
@@ -239,6 +241,12 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
+
+        ListaAdvogados listaAdvogados = new ListaAdvogados();
+        ListaClientes listaClientes = new ListaClientes();
+
+        listaAdvogados.AdicionarAdvogado(new Advogado("Joaquim", 25, "11/11/2000", "12345678901", "123456789"));
+        listaClientes.AdicionarCliente(new Cliente("Joaquim", 25, DateTime.Now, "12345678901", "Solteiro", "Advogado"));
     }
 }
 #endregion
