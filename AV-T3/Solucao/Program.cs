@@ -6,7 +6,7 @@ using System.Globalization;
 class Pessoa
 {
     public string Nome { get; protected set; }
-    protected DateTime DataNascimento;
+    public DateTime DataNascimento{ get; protected set;}
     public string CPF { get; protected set; }
     public int Idade { get; protected set; }
 
@@ -159,6 +159,11 @@ class ListaAdvogados
         this.listaAdvogados.Add(advogado);
     }
 
+    public List<Advogado> ObterAdvogados()
+    {
+        return listaAdvogados;
+    }
+
     public List<Advogado> AdvogadosPorIdades(int _idade1, int _idade2)
     {
         List<Advogado> advogadosFilterIdade = new List<Advogado>();
@@ -233,6 +238,42 @@ class ListaClientes
         }
         return clientesAlfa.OrderBy(c => c.Nome).ToList();
     }
+
+    public List<Cliente> ObterClientes()
+    {
+        return listaClientes;
+    }
+
+}
+
+class ListaAdvCli{
+        public List<Pessoa> Pessoas = new List<Pessoa>();
+
+        public void AdicionarPessoa(Pessoa pessoa)
+        {
+            this.Pessoas.Add(pessoa);
+        }
+
+        public void ImprimePessoas()
+        {
+            foreach (Pessoa pessoa in this.Pessoas)
+            {
+                pessoa.imprime();
+            }
+        }
+
+        public List<Pessoa> PessoasFilterMesAniversarios(int _mes)
+        {
+            List<Pessoa> pessoasFilterMes = new List<Pessoa>();
+            foreach (Pessoa pessoa in this.Pessoas)
+            {
+                if (pessoa.DataNascimento.Month == _mes)
+                {
+                    pessoasFilterMes.Add(pessoa);
+                }
+            }
+            return pessoasFilterMes;
+        }
 }
 
 class Program
@@ -243,12 +284,23 @@ class Program
 
         ListaAdvogados listaAdvogados = new ListaAdvogados();
         ListaClientes listaClientes = new ListaClientes();
+        ListaAdvCli listaAdvCli = new ListaAdvCli();
 
         listaAdvogados.AdicionarAdvogado(new Advogado("Joaquim", 25, "11/11/2000", "12345678901", "123456789"));
-        listaClientes.AdicionarCliente(new Cliente("Joaquim", 25, "11/03/1997", "12345678901", "Solteiro", "Advogado"));
-    
-        
+        listaAdvogados.AdicionarAdvogado(new Advogado("PEdro", 22, "25/02/1998", "234324132", "34534567678"));
 
+        listaClientes.AdicionarCliente(new Cliente("Marcelo", 28, "11/03/1997", "12345678901", "Solteiro", "Noia"));
+        listaClientes.AdicionarCliente(new Cliente("Dab", 30, "20/06/1988", "2137648438", "Solteiro", "Meotêro"));
+
+        listaAdvCli.AdicionarAdvogados(listaAdvogados.ObterAdvogados());
+        listaAdvCli.AdicionarClientes(listaClientes.ObterClientes());
+
+        listaClientes.ClienteAlfaOrdenados();
+        listaClientes.ClientesPorIdades(20, 30);
+        listaClientes.ClientesPorProfissao("Noia");
+        listaClientes.ClientesPorEstadoCivil("Solteiro");
+
+        listaAdvogados.AdvogadosPorIdades(20, 30);
     }        
 }
 #endregion
