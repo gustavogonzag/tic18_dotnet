@@ -1,11 +1,12 @@
 ﻿#region Avaliamento-t3
+using System.Security.Cryptography.X509Certificates;
 using Microsoft.VisualBasic;
 
 class Pessoa{
-        protected string nome;
+        public string nome{get; protected set;}
         protected DateTime DataNascimento;
         public string CPF { get; protected set;}
-        protected int idade;
+        public int idade{get; protected set;}
 
         public Pessoa(string _nome, int _idade, DateTime _dataNascimento, string _CPF){
             this.nome = _nome;
@@ -44,7 +45,7 @@ class Pessoa{
         }
 
         public void setCPF(string _CPF){
-            if(_CPF.Length == 11){
+            if(_CPF.Length == 11 && _CPF.All(c => char.IsDigit(c))){
                 this.CPF = _CPF;
             } else {
                 throw new ArgumentException("CPF inválido");
@@ -74,8 +75,8 @@ class Advogado : Pessoa {
 }
 
 class Cliente : Pessoa {
-    protected string _estadoCivil;
-    protected string _profissao;
+    public string _estadoCivil {get; protected set;}
+    public string _profissao{get; protected set;}
 
     public Cliente(string _nome, int _idade, DateTime _dataNascimento, string _CPF, string _estadoCivil, string _profissao) : base(_nome, _idade, _dataNascimento, _CPF){
         this._estadoCivil = _estadoCivil;
@@ -115,6 +116,16 @@ class ListaAdvogados{
             }
         this.listaAdvogados.Add(advogado);
     }
+
+    public List<Advogado> AdvogadosPorIdades(int _idade1, int _idade2){
+        List<Advogado> advogadosFilterIdade = new List<Advogado>();
+        foreach(Advogado advogado in this.listaAdvogados){
+            if(advogado.idade >= _idade1 && advogado.idade <= _idade2){
+                advogadosFilterIdade.Add(advogado);
+            }
+        }
+        return advogadosFilterIdade;
+    }
 }
 
 class ListaClientes{
@@ -124,6 +135,44 @@ class ListaClientes{
                 throw new Exception("Dados de cliente já cadastrados");
             }
         this.listaClientes.Add(cliente);
+    }
+
+    public List<Cliente> ClientesPorIdades(int _idade1, int _idade2){
+        List<Cliente> clientesFilterIdade = new List<Cliente>();
+        foreach(Cliente cliente in this.listaClientes){
+            if(cliente.idade >= _idade1 && cliente.idade <= _idade2){
+                clientesFilterIdade.Add(cliente);
+            }
+        }
+        return clientesFilterIdade;
+    }
+
+    public List<Cliente> ClientesPorEstadoCivil(string _estadoCivil){
+        List<Cliente> clientesFilterEstadoCivil = new List<Cliente>();
+        foreach(Cliente cliente in this.listaClientes){
+            if(cliente._estadoCivil == _estadoCivil){
+                clientesFilterEstadoCivil.Add(cliente);
+            }
+        }
+        return clientesFilterEstadoCivil;
+    }
+
+    public List<Cliente> ClientesPorProfissao(string _profissao){
+        List<Cliente> clientesFilterProfissao = new List<Cliente>();
+        foreach(Cliente cliente in this.listaClientes){
+            if(cliente._profissao == _profissao){
+                clientesFilterProfissao.Add(cliente);
+            }
+        }
+        return clientesFilterProfissao;
+    }
+
+    public List<Cliente> ClienteAlfaOrdenados(){
+        List<Cliente> clientesAlfa = new List<Cliente>();
+        foreach(Cliente cliente in this.listaClientes){
+            clientesAlfa.Add(cliente);
+        }
+        return clientesAlfa.OrderBy(c => c.nome).ToList();
     }
 }
 
