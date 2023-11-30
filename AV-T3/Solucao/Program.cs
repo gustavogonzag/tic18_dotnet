@@ -4,29 +4,29 @@ using Microsoft.VisualBasic;
 
 class Pessoa
 {
-    public string nome { get; protected set; }
+    public string Nome { get; protected set; }
     protected DateTime DataNascimento;
     public string CPF { get; protected set; }
-    public int idade { get; protected set; }
+    public int Idade { get; protected set; }
 
     public Pessoa(string _nome, int _idade, DateTime _dataNascimento, string _CPF)
     {
-        this.nome = _nome;
-        this.idade = _idade;
+        this.Nome = _nome;
+        this.Idade = _idade;
         this.DataNascimento = _dataNascimento;
         this.CPF = _CPF;
     }
 
     public void imprime()
     {
-        Console.WriteLine($"{this.nome} - {this.idade}");
+        Console.WriteLine($"{this.Nome} - {this.Idade}");
     }
 
     public void setNome(string _nome)
     {
         if (_nome.Length > 0)
         {
-            this.nome = _nome;
+            this.Nome = _nome;
         }
         else
         {
@@ -38,7 +38,7 @@ class Pessoa
     {
         if (_idade < 0)
         {
-            this.idade = 0;
+            this.Idade = _idade;
             return;
         }
         else
@@ -84,18 +84,6 @@ class Advogado : Pessoa
     public string getCNA()
     {
         return this.CNA;
-    }
-
-    protected void setCPF(string _CPF)
-    {
-        if (_CPF.Length == 11 && _CPF.All(c => char.IsDigit(c)))
-        {
-            this.CPF = _CPF;
-        }
-        else
-        {
-            throw new ArgumentException("CPF inválido");
-        }
     }
 
     protected void setCNA(string _CNA)
@@ -156,18 +144,6 @@ class Cliente : Pessoa
             throw new ArgumentException("Profissão inválida");
         }
     }
-
-    protected void setCPF(string _CPF)
-    {
-        if (_CPF.Length == 11 && _CPF.All(c => char.IsDigit(c)))
-        {
-            this.CPF = _CPF;
-        }
-        else
-        {
-            throw new ArgumentException("CPF inválido");
-        }
-    }
 }
 
 class ListaAdvogados
@@ -187,7 +163,7 @@ class ListaAdvogados
         List<Advogado> advogadosFilterIdade = new List<Advogado>();
         foreach (Advogado advogado in this.listaAdvogados)
         {
-            if (advogado.idade >= _idade1 && advogado.idade <= _idade2)
+            if (advogado.Idade >= _idade1 && advogado.Idade <= _idade2)
             {
                 advogadosFilterIdade.Add(advogado);
             }
@@ -213,7 +189,7 @@ class ListaClientes
         List<Cliente> clientesFilterIdade = new List<Cliente>();
         foreach (Cliente cliente in this.listaClientes)
         {
-            if (cliente.idade >= _idade1 && cliente.idade <= _idade2)
+            if (cliente.Idade >= _idade1 && cliente.Idade <= _idade2)
             {
                 clientesFilterIdade.Add(cliente);
             }
@@ -254,7 +230,7 @@ class ListaClientes
         {
             clientesAlfa.Add(cliente);
         }
-        return clientesAlfa.OrderBy(c => c.nome).ToList();
+        return clientesAlfa.OrderBy(c => c.Nome).ToList();
     }
 }
 
