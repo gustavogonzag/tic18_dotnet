@@ -1,0 +1,15 @@
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/bin/Debug/net7.0/ExemplosAula02
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/bin/Debug/net7.0/ExemplosAula02.deps.json
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/bin/Debug/net7.0/ExemplosAula02.runtimeconfig.json
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/bin/Debug/net7.0/ExemplosAula02.dll
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/bin/Debug/net7.0/ExemplosAula02.pdb
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/obj/Debug/net7.0/ExemplosAula02.csproj.AssemblyReference.cache
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/obj/Debug/net7.0/ExemplosAula02.GeneratedMSBuildEditorConfig.editorconfig
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/obj/Debug/net7.0/ExemplosAula02.AssemblyInfoInputs.cache
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/obj/Debug/net7.0/ExemplosAula02.AssemblyInfo.cs
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/obj/Debug/net7.0/ExemplosAula02.csproj.CoreCompileInputs.cache
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/obj/Debug/net7.0/ExemplosAula02.dll
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/obj/Debug/net7.0/refint/ExemplosAula02.dll
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/obj/Debug/net7.0/ExemplosAula02.pdb
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/obj/Debug/net7.0/ExemplosAula02.genruntimeconfig.cache
+/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/obj/Debug/net7.0/ref/ExemplosAula02.dll

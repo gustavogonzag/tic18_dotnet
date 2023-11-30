@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/PrimeiroPrograma.csproj": {}
+    "/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/ExemplosAula02.csproj": {}
   },
   "projects": {
-    "/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/PrimeiroPrograma.csproj": {
+    "/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/ExemplosAula02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/PrimeiroPrograma.csproj",
-        "projectName": "PrimeiroPrograma",
-        "projectPath": "/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/PrimeiroPrograma.csproj",
+        "projectUniqueName": "/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/ExemplosAula02.csproj",
+        "projectName": "ExemplosAula02",
+        "projectPath": "/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/ExemplosAula02.csproj",
         "packagesPath": "/home/gustavo-souza-gonzaga/.nuget/packages/",
-        "outputPath": "/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/obj/",
+        "outputPath": "/home/gustavo-souza-gonzaga/tic18_dotnet/Semana2/ExemplosAula02/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/gustavo-souza-gonzaga/.nuget/NuGet/NuGet.Config"
