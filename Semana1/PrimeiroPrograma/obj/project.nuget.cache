@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "yVywKVAE+HJrwcseRnb2ZWOJARWm3QvHhh6yBygongAyuWvxQaftauBoX2t0qnF3uwBcCcbgx5dP98gtl3NcGg==",
+  "dgSpecHash": "bJ/nZfuFGGbQK4ymQCu/ul4dDsc5zaPCvFDeDfbZhfnws6aJ8cahRp4GHGiUai14s0AC0wMZCqo5FFcsSbTB/A==",
   "success": true,
-  "projectFilePath": "/home/gustavo-souza-gonzaga/tic18_dotnet/Semana1/PrimeiroPrograma/PrimeiroPrograma.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\RESIDENCIA\\tic18_dotnet\\Semana1\\PrimeiroPrograma\\PrimeiroPrograma.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\gusta\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\gusta\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
+  ],
   "logs": []
 }
