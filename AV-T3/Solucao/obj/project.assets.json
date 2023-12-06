@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/home/gustavo-souza-gonzaga/.nuget/packages/": {}
+    "C:\\Users\\gusta\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/gustavo-souza-gonzaga/tic18_dotnet/AV-T3/Solucao/Solucao.csproj",
+      "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\RESIDENCIA\\tic18_dotnet\\AV-T3\\Solucao\\Solucao.csproj",
       "projectName": "Solucao",
-      "projectPath": "/home/gustavo-souza-gonzaga/tic18_dotnet/AV-T3/Solucao/Solucao.csproj",
-      "packagesPath": "/home/gustavo-souza-gonzaga/.nuget/packages/",
-      "outputPath": "/home/gustavo-souza-gonzaga/tic18_dotnet/AV-T3/Solucao/obj/",
+      "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\RESIDENCIA\\tic18_dotnet\\AV-T3\\Solucao\\Solucao.csproj",
+      "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\RESIDENCIA\\tic18_dotnet\\AV-T3\\Solucao\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/gustavo-souza-gonzaga/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -54,12 +54,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.114/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

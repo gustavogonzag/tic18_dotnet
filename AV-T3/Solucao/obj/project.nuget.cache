@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "S+EESk2y6l5eax/r/sMw3bKE08IV5sXB8KbVkr0CpK6XzYhy3ybu/9deoDY3L/+d+nOgfkFRPba2tE4HJ49tKw==",
+  "dgSpecHash": "u9t4YGDmRAfgwiAAfl+KEUfw2Ic92bV7b72WGa+HxM609093oh0Dfn1wVGnb/Xle3lRQHJQDzliqOo+PJfx5cw==",
   "success": true,
-  "projectFilePath": "/home/gustavo-souza-gonzaga/tic18_dotnet/AV-T3/Solucao/Solucao.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\RESIDENCIA\\tic18_dotnet\\AV-T3\\Solucao\\Solucao.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\gusta\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\gusta\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
+  ],
   "logs": []
 }
