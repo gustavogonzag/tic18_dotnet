@@ -181,21 +181,21 @@ class Program
                         Console.WriteLine("Advogados entre 30 e 50 anos:");
                         foreach (var adv in advogadosEntreIdades)
                         {
-                            Console.WriteLine(adv);
+                            Console.WriteLine(adv.Nome + " - " + adv.CPF + " - " + adv.CNA); ;
                         }
                         break;
                     case 2:
                         Console.WriteLine("Clientes entre 25 e 35 anos:");
                         foreach (var cli in clientesEntreIdades)
                         {
-                            Console.WriteLine(cli);
+                            Console.WriteLine(cli.Nome + " - " + cli.CPF + " - " + cli.DataNascimento);
                         }
                         break;
                     case 3:
                         Console.WriteLine("Clientes por estado civil:");
                         foreach (var cli in clientesPorEstadoCivil)
                         {
-                            Console.WriteLine(cli);
+                            Console.WriteLine(cli.Nome + " - " + cli.CPF + " - " + cli.DataNascimento);
                         }
                         break;
                 }
