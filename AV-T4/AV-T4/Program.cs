@@ -100,11 +100,12 @@ class Escritorio
         {
             throw new InvalidOperationException("A data de conclusão deve ser posterior à data de início.");
         }
-
-        // Implemente outras regras de negócio necessárias
+        else
+        {
+            caso.Status = "Concluído";
+            caso.Encerramento = DateTime.Now;
+        }
     }
-
-    // Métodos para inserir e remover Advogados, Clientes, Documentos, etc.
 
     // Relatórios
     public List<Advogado> AdvogadosEntreIdades(int idadeMinima, int idadeMaxima)
@@ -127,7 +128,10 @@ class Escritorio
         return Clientes.OrderBy(c => c.Nome).ToList();
     }
 
-    // Implemente os demais relatórios conforme necessário.
+    public List<Advogado> AdvogadosPorProfissao(string profissao)
+    {
+        return Advogados.Where(a => a.Profissao.Equals(profissao, StringComparison.OrdinalIgnoreCase)).ToList();
+    }
 }
 
 class Program
@@ -151,11 +155,6 @@ class Program
         List<Cliente> clientesEntreIdades = escritorio.ClientesEntreIdades(25, 35);
         List<Cliente> clientesPorEstadoCivil = escritorio.ClientesPorEstadoCivil("Solteiro");
         List<Cliente> clientesEmOrdemAlfabetica = escritorio.ClientesEmOrdemAlfabetica();
-
-        // Exemplo de utilização de outros métodos e relatórios
-        // ...
-        // Implemente a interação do usuário e utilize os métodos da classe Escritorio conforme necessário.
-        //Menu
 
         int opcao = 0;
         while (opcao == 0)
